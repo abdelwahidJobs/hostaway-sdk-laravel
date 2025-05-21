@@ -5,7 +5,7 @@ namespace Backend\HostawaySdkLaravel\Http\Requests;
 
 
 use Backend\HostawaySdkLaravel\Dto\CustomField;
-use Wechalet\HostAway\Exceptions\JsonEncodingException;
+use Backend\HostawaySdkLaravel\Exceptions\JsonEncodingException;
 
 class CustomFieldBody
 {

@@ -27,7 +27,7 @@ class ListingsGetRequest extends HostAwayRequest
             $query = '&' . implode('&', $queryParams);
         }
 
-        parent::__construct('GET', '/v1/listings?provider=wechalet' . $query, $headers);
+        parent::__construct('GET', '/v1/listings' . $query, $headers);
 
     }
 }

@@ -2,7 +2,8 @@
 
 namespace Backend\HostawaySdkLaravel\Http\Requests;
 
-use Wechalet\HostAway\Exceptions\JsonEncodingException;
+use Backend\HostawaySdkLaravel\Exceptions\JsonEncodingException;
+
 
 class BatchCalendarBody
 {

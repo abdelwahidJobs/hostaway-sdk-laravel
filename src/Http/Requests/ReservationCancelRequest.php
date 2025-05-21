@@ -17,7 +17,7 @@ class ReservationCancelRequest extends HostAwayRequest
 
         $request_body = new ReservationCancelBody($cancelled_by);
         $body = Utils::streamFor((string)$request_body);
-        $uri = str_replace(':reservation_id', urlencode($reservation_id), '/v1/reservations/:reservation_id/statuses/cancelled?provider=wechalet');
+        $uri = str_replace(':reservation_id', urlencode($reservation_id), '/v1/reservations/:reservation_id/statuses/cancelled');
         parent::__construct('PUT', $uri, $headers, $body);
     }
 }

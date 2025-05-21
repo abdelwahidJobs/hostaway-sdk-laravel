@@ -3,7 +3,7 @@
 namespace Backend\HostawaySdkLaravel\Http\Requests;
 
 use Backend\HostawaySdkLaravel\Dto\Reservation;
-use Wechalet\HostAway\Exceptions\JsonEncodingException;
+use Backend\HostawaySdkLaravel\Exceptions\JsonEncodingException;
 
 class ReservationBody
 {

@@ -11,7 +11,7 @@ class AccessTokenGetRequest extends HostAwayRequest
             'Content-Type' => 'application/x-www-form-urlencoded',
             'cache-control' => 'no-cache'
         ];
-        parent::__construct('POST', '/v1/accessTokens?provider=wechalet', $headers, $this->buildBody($client_id, $client_secret));
+        parent::__construct('POST', '/v1/accessTokens', $headers, $this->buildBody($client_id, $client_secret));
     }
 
     public function buildBody($client_id, $client_secret): string

@@ -2,8 +2,8 @@
 
 namespace Backend\HostawaySdkLaravel\Http\Requests;
 
-use GuzzleHttp\Psr7\Utils;
 use Backend\HostawaySdkLaravel\Dto\Listing;
+use GuzzleHttp\Psr7\Utils;
 
 class ListingUpdateRequest extends HostAwayRequest
 {
@@ -18,7 +18,7 @@ class ListingUpdateRequest extends HostAwayRequest
 
         $payload = new ListingBody($listing);
         $body = Utils::streamFor((string)$payload);
-        $uri = str_replace(':listing_id', urlencode($listing->id), '/v1/listings/:listing_id?provider=wechalet');
+        $uri = str_replace(':listing_id', urlencode($listing->id), '/v1/listings/:listing_id');
         parent::__construct('PUT', $uri, $headers, $body);
     }
 }

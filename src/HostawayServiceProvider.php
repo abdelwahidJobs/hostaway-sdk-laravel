@@ -6,7 +6,7 @@ use Backend\HostawaySdkLaravel\Http\Client\HostAwayHttpClient;
 use Backend\HostawaySdkLaravel\Http\Environment\HostAwayEnvironment;
 use Illuminate\Support\ServiceProvider;
 
-class HostawayServiceProvider  extends ServiceProvider
+class HostawayServiceProvider extends ServiceProvider
 {
     public function register()
     {

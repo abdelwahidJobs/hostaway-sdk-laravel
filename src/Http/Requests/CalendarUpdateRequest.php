@@ -2,8 +2,8 @@
 
 namespace Backend\HostawaySdkLaravel\Http\Requests;
 
-use GuzzleHttp\Psr7\Utils;
 use Backend\HostawaySdkLaravel\Dto\Calendar;
+use GuzzleHttp\Psr7\Utils;
 
 class CalendarUpdateRequest extends HostAwayRequest
 {
@@ -18,7 +18,7 @@ class CalendarUpdateRequest extends HostAwayRequest
 
         $payload = new CalendarBody($calendar);
         $body = Utils::streamFor((string)$payload);
-        $uri = str_replace(':listing_id', urlencode($listing_id), '/v1/listings/:listing_id/calendar?provider=wechalet');
+        $uri = str_replace(':listing_id', urlencode($listing_id), '/v1/listings/:listing_id/calendar');
         parent::__construct('PUT', $uri, $headers, $body);
     }
 }

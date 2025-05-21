@@ -20,7 +20,8 @@
         "php": "^7.4|^8.0",
         "spatie/data-transfer-object": "^2.8",
         "illuminate/support": "^8.83",
-        "guzzlehttp/guzzle": "^7.9"
+      "guzzlehttp/guzzle": "^7.9",
+      "ext-json": "*"
     },
     "extra": {
         "laravel": {

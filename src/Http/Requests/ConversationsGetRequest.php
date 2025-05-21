@@ -12,7 +12,7 @@ class ConversationsGetRequest extends HostAwayRequest
             'cache-control' => 'no-cache'
         ];
 
-        $uri = '/v1/conversations?provider=wechalet&' . $requestBody->getQuery();
+        $uri = '/v1/conversations&' . $requestBody->getQuery();
         parent::__construct('GET', $uri, $headers);
     }
 }

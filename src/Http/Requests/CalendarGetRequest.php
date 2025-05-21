@@ -13,7 +13,7 @@ class CalendarGetRequest extends HostAwayRequest
         ];
 
         $uri = str_replace(':listing_id', urlencode($listing_id), '/v1/listings/:listing_id/calendar');
-        $uri = $uri.'?provider=wechalet&' . $calendarRequestBody->getQuery();
+        $uri = $uri . '?' . $calendarRequestBody->getQuery();
         parent::__construct('GET', $uri, $headers);
     }
 }

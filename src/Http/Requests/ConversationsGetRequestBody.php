@@ -3,10 +3,10 @@
 namespace Backend\HostawaySdkLaravel\Http\Requests;
 
 /**
- * limit	no	int	Maximum number of items in the list.
- * offset	no	int	Number of items to skip from beginning of the list.
- * reservationId	no	int	reservation id
- * includeResources	no	int	if includeResources flag is 1 then response objects are supplied with supplementary resources, default is 1.
+ * limit    no    int    Maximum number of items in the list.
+ * offset    no    int    Number of items to skip from beginning of the list.
+ * reservationId    no    int    reservation id
+ * includeResources    no    int    if includeResources flag is 1 then response objects are supplied with supplementary resources, default is 1.
  */
 class ConversationsGetRequestBody
 {

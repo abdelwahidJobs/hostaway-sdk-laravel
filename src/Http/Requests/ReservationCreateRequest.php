@@ -2,8 +2,8 @@
 
 namespace Backend\HostawaySdkLaravel\Http\Requests;
 
-use GuzzleHttp\Psr7\Utils;
 use Backend\HostawaySdkLaravel\Dto\Reservation;
+use GuzzleHttp\Psr7\Utils;
 
 class ReservationCreateRequest extends HostAwayRequest
 {
@@ -17,6 +17,6 @@ class ReservationCreateRequest extends HostAwayRequest
 
         $payload = new ReservationBody($reservation);
         $body = Utils::streamFor((string)$payload);
-        parent::__construct('POST', '/v1/reservations?provider=wechalet', $headers, $body);
+        parent::__construct('POST', '/v1/reservations', $headers, $body);
     }
 }

@@ -2,8 +2,8 @@
 
 namespace Backend\HostawaySdkLaravel\Http\Requests;
 
-use GuzzleHttp\Psr7\Utils;
 use Backend\HostawaySdkLaravel\Dto\CustomField;
+use GuzzleHttp\Psr7\Utils;
 
 class CustomFieldCreateRequest extends HostAwayRequest
 {
@@ -17,6 +17,6 @@ class CustomFieldCreateRequest extends HostAwayRequest
 
         $payload = new CustomFieldBody($customField);
         $body = Utils::streamFor((string)$payload);
-        parent::__construct('POST', '/v1/customFields?provider=wechalet', $headers, $body);
+        parent::__construct('POST', '/v1/customFields', $headers, $body);
     }
 }

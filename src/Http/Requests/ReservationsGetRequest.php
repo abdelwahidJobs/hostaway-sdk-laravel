@@ -12,7 +12,7 @@ class ReservationsGetRequest extends HostAwayRequest
             'cache-control' => 'no-cache'
         ];
 
-        $uri = '/v1/reservations?provider=wechalet&' . $reservationRequestBody->getQuery();
+        $uri = '/v1/reservations' . $reservationRequestBody->getQuery();
         parent::__construct('GET', $uri, $headers);
     }
 }

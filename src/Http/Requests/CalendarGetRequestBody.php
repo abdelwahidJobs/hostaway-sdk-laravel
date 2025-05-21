@@ -3,9 +3,9 @@
 namespace Backend\HostawaySdkLaravel\Http\Requests;
 
 /**
- * startDate	no	date
- * endDate	no	date
- * includeResources	no	int	if includeResources flag is 1 then response objects are supplied with supplementary resources,
+ * startDate    no    date
+ * endDate    no    date
+ * includeResources    no    int    if includeResources flag is 1 then response objects are supplied with supplementary resources,
  * default is 1.
  */
 class CalendarGetRequestBody

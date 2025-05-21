@@ -12,7 +12,7 @@ class WebhookReservationGetRequest extends HostAwayRequest
             'cache-control' => 'no-cache'
         ];
 
-        $uri = str_replace(':webhook_id', urlencode($webhook_id), '/v1/webhooks/reservations/:webhook_id?provider=wechalet');
+        $uri = str_replace(':webhook_id', urlencode($webhook_id), '/v1/webhooks/reservations/:webhook_id');
         parent::__construct('GET', $uri, $headers);
     }
 }

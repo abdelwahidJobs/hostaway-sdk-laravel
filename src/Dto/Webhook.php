@@ -2,8 +2,8 @@
 
 namespace Backend\HostawaySdkLaravel\Dto;
 
-use Spatie\DataTransferObject\FlexibleDataTransferObject;
 use Backend\HostawaySdkLaravel\Traits\HasCollection;
+use Spatie\DataTransferObject\FlexibleDataTransferObject;
 
 class Webhook extends FlexibleDataTransferObject
 {

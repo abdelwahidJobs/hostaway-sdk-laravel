@@ -2,10 +2,10 @@
 
 namespace Backend\HostawaySdkLaravel\Http\Client;
 
-use GuzzleHttp\Client;
-use Psr\Http\Message\ResponseInterface;
 use Backend\HostawaySdkLaravel\Http\Environment\Environment;
 use Backend\HostawaySdkLaravel\Http\Requests\HostAwayRequest;
+use GuzzleHttp\Client;
+use Psr\Http\Message\ResponseInterface;
 
 class HostAwayHttpClient implements HttpClient
 {

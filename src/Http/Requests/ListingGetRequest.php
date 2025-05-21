@@ -2,8 +2,6 @@
 
 namespace Backend\HostawaySdkLaravel\Http\Requests;
 
-use Backend\HostawaySdkLaravel\Http\Requests\HostAwayRequest;
-
 class ListingGetRequest extends HostAwayRequest
 {
     public function __construct(int $listing_id)
@@ -13,7 +11,7 @@ class ListingGetRequest extends HostAwayRequest
             'Content-Type' => 'application/json',
             'cache-control' => 'no-cache'
         ];
-        $uri = str_replace(':listing_id', urlencode($listing_id), '/v1/listings/:listing_id?provider=wechalet');
+        $uri = str_replace(':listing_id', urlencode($listing_id), '/v1/listings/:listing_id');
         parent::__construct('GET', $uri, $headers);
     }
 }

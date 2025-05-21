@@ -12,7 +12,7 @@ class ConversationMessagesGetRequest extends HostAwayRequest
             'cache-control' => 'no-cache'
         ];
 
-        $uri = str_replace(':conversation_id', urlencode($conversation_id), '/v1/conversations/:conversation_id/messages?provider=wechalet');
+        $uri = str_replace(':conversation_id', urlencode($conversation_id), '/v1/conversations/:conversation_id/messages');
         parent::__construct('GET', $uri, $headers);
     }
 }

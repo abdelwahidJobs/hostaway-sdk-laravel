@@ -2,6 +2,7 @@
 
 namespace Backend\HostawaySdkLaravel\Dto;
 
+use Backend\HostawaySdkLaravel\Traits\HasCollection;
 use Spatie\DataTransferObject\FlexibleDataTransferObject;
 
 class Reservation extends FlexibleDataTransferObject
@@ -115,7 +116,7 @@ class Reservation extends FlexibleDataTransferObject
     }
 
 
-      /**
+    /**
      * Convert the model to its string representation.
      *
      * @return string

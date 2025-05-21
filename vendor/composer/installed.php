@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'abdelwahidjobs/hostaway-sdk-laravel',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => '32806e504a8555cd6a040b88e39527d398566731',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'abdelwahidjobs/hostaway-sdk-laravel' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '32806e504a8555cd6a040b88e39527d398566731',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

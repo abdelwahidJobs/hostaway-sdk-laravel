@@ -12,7 +12,7 @@ class  ListingGetListFeeSettings extends HostAwayRequest
             'cache-control' => 'no-cache'
         ];
 
-        $uri = str_replace(':listing_id', urlencode($listing_id), '/v1/listingFeeSettings/:listing_id?provider=wechalet');
+        $uri = str_replace(':listing_id', urlencode($listing_id), '/v1/listingFeeSettings/:listing_id');
         parent::__construct('GET', $uri, $headers);
     }
 }
